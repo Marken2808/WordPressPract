@@ -1,0 +1,10 @@
+DOCKER:
+# create .yml file
+>_ docker-compose up
+# modify
+>_ docker-compose ps
+>_ docker-compose up -d
+
+# restart
+>_ docker-compose down
+>_ docker-compose up -d
