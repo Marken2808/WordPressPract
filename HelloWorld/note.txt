@@ -2,12 +2,24 @@ DOCKER:
 # create .yml file
 >_ docker-compose up
 
-# status
+# check status
 >_ docker-compose ps
 
 # modify and restart
 >_ docker-compose down
 >_ docker-compose up -d
 
-# remove 
+# remove <container/image/volume>
 >_ docker volume prune
+
+# user list
+>_ docker-compose run --rm wp user list
+
+# install plugin
+>_ docker-compose run --rm wp plugin install <plugin-name>
+
+# activate installed plugin
+>_ docker-compose run --rm wp plugin activate <installed-plugin>
+
+# recreate
+>_ docker-compose up -d
