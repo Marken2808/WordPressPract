@@ -8,3 +8,6 @@ DOCKER:
 # modify and restart
 >_ docker-compose down
 >_ docker-compose up -d
+
+# remove 
+>_ docker volume prune
